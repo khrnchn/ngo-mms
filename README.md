@@ -4,20 +4,15 @@ A proposal for NGO Member Management System.
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td><img src="screenshots/dashboard.png" width="400" alt="dashboard"></td>
-    <td><img src="screenshots/organizations.png" width="400" alt="organizations"></td>
-  </tr>
-</table>
+[Dashboard](screenshots/dashboard.jpg)
+[Organizations](screenshots/organization.jpg)
+
+<p>
+    <img src="screenshots/dashboard.jpg" width="45%"/>
+    <img src="screenshots/organization.jpg" width="45%"/>
+</p>
 
 Generated on: 2024-04-29 01:11:49 (UTC)
-
-Filapanel is your dynamic, user-friendly tool for accelerating Laravel application development. Built on the Filament framework, it provides a seamless approach for creating, configuring, and managing resources and models.
-
-## Installed packages
-
-No packages were selected to be installed.
 
 ## Further installation
 
