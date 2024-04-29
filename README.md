@@ -1,10 +1,15 @@
-# Welcome to Filapanel
+# Welcome to NGO MMS
 
-*Brought to you by [Ploi - a server management tool](https://ploi.io/?ref=filapanel-github)*
+A proposal for NGO Member Management System.
 
-[https://filapanel.com](https://filapanel.com?ref=filapanel-github)
+## Screenshots
 
-<p align="center"><a href="https://filapanel.com/?ref=filapanel-github" target="_blank"><img src="https://filapanel.com/img/og.png" width="100%" alt="Filapanel"></a></p>
+<table>
+  <tr>
+    <td><img src="screenshots/dashboard.png" width="400" alt="dashboard"></td>
+    <td><img src="screenshots/organizations.png" width="400" alt="organizations"></td>
+  </tr>
+</table>
 
 Generated on: 2024-04-29 01:11:49 (UTC)
 
