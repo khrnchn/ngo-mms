@@ -14,15 +14,15 @@ class NewsResource extends Resource
 {
     protected static ?string $model = News::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title'),
-                Forms\Components\Textarea::make('content'),
-            ]);
+                Forms\Components\RichEditor::make('content'),
+            ])->columns(1);
     }
 
     public static function table(Table $table): Table
@@ -30,7 +30,6 @@ class NewsResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')->searchable(),
-
             ])
             ->filters([
 
