@@ -17,6 +17,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Widgets\NavWidget;
 
 class MembersPanelProvider extends PanelProvider
 {
@@ -37,8 +38,7 @@ class MembersPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Members/Widgets'), for: 'App\\Filament\\Members\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                NavWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
