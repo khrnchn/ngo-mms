@@ -16,6 +16,8 @@ class NewsResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
+    protected static ?string $navigationGroup = 'Manage';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -31,9 +33,7 @@ class NewsResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')->searchable(),
             ])
-            ->filters([
-
-            ])
+            ->filters([])
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])
@@ -52,4 +52,16 @@ class NewsResource extends Resource
             'edit' => Pages\EditNews::route('/{record}/edit'),
         ];
     }
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
+    public static function getNavigationBadgeColor(): ?string
+    {
+        return 'primary';
+    }
+
+    protected static ?string $navigationBadgeTooltip = 'The number of news created';
 }
